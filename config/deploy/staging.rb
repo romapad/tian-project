@@ -8,7 +8,7 @@ set :stage, :staging
 
 # Extended Server Syntax
 # ======================
-server 'scp18.hosting.reg.ru', user: 'u7791335', roles: %w{web app db}
+server 'DESKTOP-272SVRC', user: 'romap', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -16,7 +16,7 @@ server 'scp18.hosting.reg.ru', user: 'u7791335', roles: %w{web app db}
 # set it globally
   set :ssh_options, {
     keys: %w(~/.ssh/id_rsa),
-	password: 'S!eO1Bjx',
+	password: 'G0uranga',
     forward_agent: false,
     auth_methods: %w(password)
   }

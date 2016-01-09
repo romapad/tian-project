@@ -1,6 +1,6 @@
 set :application, 'tian'
 set :repo_url, 'git@github.com:romapad/tian-project.git'
-#set :tmp_dir, '/var/www/u7791335/public_html/tmp'
+set :tmp_dir, '/var/www/u7791335/public_html/tmp'
 
 
 #SSHKit.config.command_map[:bash] = '/bin/bash'
@@ -13,8 +13,8 @@ set :repo_url, 'git@github.com:romapad/tian-project.git'
 # This could be overridden in a stage config file
 set :branch, :master
 
-#set :deploy_to, -> { "/var/www/u7791335/public_html/#{fetch(:application)}" }
-set :deploy_to, -> { "/cygdrive/d/Bitnami/rubystack-2.0.0-34/apps/tian/deploy/#{fetch(:application)}" }
+set :deploy_to, -> { "/var/www/u7791335/public_html/#{fetch(:application)}" }
+#set :deploy_to, -> { "/cygdrive/d/Bitnami/rubystack-2.0.0-34/apps/tian/deploy/#{fetch(:application)}" }
 
 # Use :debug for more verbose output when troubleshooting
 set :log_level, :debug
@@ -64,13 +64,13 @@ end
 # Note that you need to have WP-CLI installed on your server
 # Uncomment the following line to run it on deploys if needed
 # after 'deploy:publishing', 'deploy:update_option_paths'
-#namespace :'php-cli /var/www/u7791335/composer.phar' do
-#    before 'install', 'change_dir'
-#
-#    desc 'Composer update'
-#    task :change_dir do
-#        on roles(:app) do
-#            execute "cd #{release_path}/ && composer update"
-#        end
-#    end
-#end
+namespace :'php-cli /var/www/u7791335/composer.phar' do
+    before 'install', 'change_dir'
+
+    desc 'Composer update'
+    task :change_dir do
+        on roles(:app) do
+            execute "cd #{release_path}/ && composer update"
+        end
+    end
+end

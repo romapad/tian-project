@@ -64,13 +64,13 @@ end
 # Note that you need to have WP-CLI installed on your server
 # Uncomment the following line to run it on deploys if needed
 # after 'deploy:publishing', 'deploy:update_option_paths'
-namespace :'php-cli /var/www/u7791335/composer.phar' do
-    before 'install', 'change_dir'
-
-    desc 'Composer update'
-    task :change_dir do
-        on roles(:app) do
-            execute "cd #{release_path}/ && composer update"
-        end
-    end
-end
+#namespace :'php-cli /var/www/u7791335/composer.phar' do
+#    before 'install', 'change_dir'
+#
+#    desc 'Composer update'
+#    task :change_dir do
+#        on roles(:app) do
+#            execute "cd #{release_path}/ && composer update"
+#        end
+#    end
+#end

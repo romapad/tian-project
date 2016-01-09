@@ -22,3 +22,8 @@ server 'DESKTOP-272SVRC', user: 'romap', roles: %w{web app db}
   }
 
 fetch(:default_env).merge!(wp_env: :staging)
+
+set :wpcli_remote_url, 'tian.stage'
+set :wpcli_local_url, 'tian.dev'
+set :wpcli_args, 'staging'
+set :wpcli_backup_db, 'true'

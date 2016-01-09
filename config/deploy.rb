@@ -5,7 +5,7 @@ set :tmp_dir, '/var/www/u7791335/public_html/tmp'
 
 SSHKit.config.command_map[:bash] = '/bin/bash'
 SSHKit.config.command_map[:composer] = 'php-cli /var/www/u7791335/composer.phar'
-SSHKit.config.command_map[:wp-cli] = 'php /var/www/u7791335/wp-cli.phar'
+SSHKit.config.command_map[:wp] = 'php /var/www/u7791335/wp-cli.phar'
 # Branch options
 # Prompts for the branch name (defaults to current branch)
 #ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }

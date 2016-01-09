@@ -8,8 +8,7 @@ set :stage, :staging
 
 # Extended Server Syntax
 # ======================
-# server 'DESKTOP-272SVRC', user: 'romap', roles: %w{web app db}
-server 'scp18.hosting.reg.ru', user: 'u7791335', roles: %w{web app db}
+server 'DESKTOP-272SVRC', user: 'romap', roles: %w{web app db}
 
 
 # you can set custom ssh options
@@ -18,15 +17,9 @@ server 'scp18.hosting.reg.ru', user: 'u7791335', roles: %w{web app db}
 # set it globally
   set :ssh_options, {
     keys: %w(~/.ssh/id_rsa),
-#	password: 'G0uranga',
-	password: 'S!eO1Bjx',
+	password: 'G0uranga',
     forward_agent: false,
     auth_methods: %w(password)
   }
 
 fetch(:default_env).merge!(wp_env: :staging)
-
-#set :wpcli_remote_url, 'tian.stage'
-#set :wpcli_local_url, 'tian.dev'
-#set :wpcli_args, 'staging'
-#set :wpcli_backup_db, 'true'

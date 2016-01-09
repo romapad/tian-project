@@ -5,7 +5,6 @@ set :tmp_dir, '/var/www/u7791335/public_html/tmp'
 
 SSHKit.config.command_map[:bash] = '/bin/bash'
 SSHKit.config.command_map[:composer] = 'php-cli /var/www/u7791335/composer.phar'
-SSHKit.config.command_map[:wp] = 'php /var/www/u7791335/wp-cli.phar'
 # Branch options
 # Prompts for the branch name (defaults to current branch)
 #ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }
@@ -18,7 +17,7 @@ set :deploy_to, -> { "/var/www/u7791335/public_html/#{fetch(:application)}" }
 #set :deploy_to, -> { "/cygdrive/d/Bitnami/rubystack-2.0.0-34/apps/tian/deploy/#{fetch(:application)}" }
 
 # Use :debug for more verbose output when troubleshooting
-set :log_level, :debug
+set :log_level, :info
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
@@ -74,29 +73,4 @@ namespace :'php-cli /var/www/u7791335/composer.phar' do
             execute "cd #{release_path}/ && composer update"
         end
     end
-end
-
-time             = Time.new
-backup_timestamp = time.strftime("%Y%m%d%H%M")
-
-set :db_backup_file_name,        -> {"wpcli_db_backup.#{backup_timestamp}.sql.gz"}
-set :local_db_folder_path,       -> {"./db_backups"}
-set :local_db_folder_file_path,  -> {"./db_backups/#{fetch(:db_backup_file_name)}"}
-set :remote_db_folder_path,      -> {"#{fetch(:deploy_to)}/db_backups"}
-set :remote_db_folder_file_path, -> {"#{fetch(:deploy_to)}/db_backups/#{fetch(:db_backup_file_name)}"}
-
-before 'wpcli:db:pull', :backup_local_db do
-  run_locally do
-    execute :mkdir, "-p", fetch(:local_db_folder_path)
-    execute :wp, :db, :export, "- |", :gzip, ">", fetch(:local_db_folder_file_path)
-  end
-end
-
-before 'wpcli:db:push', :backup_remote_db do
-  on roles(:web) do
-    within release_path do
-      execute :mkdir, "-p", fetch(:remote_db_folder_path)
-      execute :wp, :db, :export, "- |", :gzip, ">", fetch(:remote_db_folder_file_path)
-    end
-  end
 end

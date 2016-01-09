@@ -30,7 +30,12 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
-    }
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:romapad/tian.git"
+    }	
+	
   ],
   "require": {
     "php": ">=5.5",
@@ -43,7 +48,8 @@
 	"wpackagist-plugin/cyr3lat": "3.5",
 	"wpackagist-plugin/akismet": "3.1.7",
     "wpackagist-plugin/backwpup": "3.2.2",
-    "wpackagist-plugin/wordpress-seo": "3.0.7"
+    "wpackagist-plugin/wordpress-seo": "3.0.7",
+	"romapad/tian": "dev-master"
   },
   "extra": {
     "installer-paths": {

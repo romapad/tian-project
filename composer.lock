@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f140a28430ad0eebeb255607708d2750",
-    "content-hash": "42d50f26f22b4c53e3c1f72056cfd648",
+    "hash": "01cac6081fc6700141c0a5cba47cd8b4",
+    "content-hash": "dc7725a144b8ecc3cf0b6dfd45d93157",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,6 +189,45 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "romapad/tian",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:romapad/tian.git",
+                "reference": "1878e1c073dd316d768bc8ef970e6bc8fbb5d2e0"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                }
+            ],
+            "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
+            "homepage": "https://roots.io/sage/",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/roots/sage/issues",
+                "forum": "https://discourse.roots.io/"
+            },
+            "time": "2016-01-09 18:53:41"
         },
         {
             "name": "roots/soil",
@@ -410,7 +449,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "roots/soil": 20,
-        "wpackagist-plugin/woocommerce": 20
+        "wpackagist-plugin/woocommerce": 20,
+        "romapad/tian": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

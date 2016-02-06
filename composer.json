@@ -38,11 +38,7 @@
     {
       "type": "git",
       "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/wp-sync-db/wp-sync-db-cli.git"
-    }			
+    }		
 	
   ],
   "require": {
@@ -58,8 +54,7 @@
     "wpackagist-plugin/backwpup": "3.2.3",
     "wpackagist-plugin/wordpress-seo": "3.0.7",
 	"wp-sync-db/wp-sync-db": "dev-master",
-	"wp-sync-db/wp-sync-db-media-files": "dev-master",
-	"wp-sync-db/wp-sync-db-cli": "dev-master"
+	"wp-sync-db/wp-sync-db-media-files": "dev-master"
   },
   "extra": {
     "installer-paths": {

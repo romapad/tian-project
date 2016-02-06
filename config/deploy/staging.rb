@@ -8,7 +8,7 @@ set :stage, :staging
 
 # Extended Server Syntax
 # ======================
-server 'DESKTOP-272SVRC', user: 'romap', roles: %w{web app db}
+server 'romapad', user: 'Romapad', roles: %w{web app db}
 
 
 # you can set custom ssh options

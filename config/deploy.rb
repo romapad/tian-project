@@ -4,7 +4,7 @@ set :tmp_dir, '/var/www/u7791335/public_html/tmp'
 
 
 SSHKit.config.command_map[:bash] = '/bin/bash'
-SSHKit.config.command_map[:composer] = 'php-cli /var/www/u7791335/composer.phar'
+SSHKit.config.command_map[:composer] = 'COMPOSER_PROCESS_TIMEOUT=2000 php-cli /var/www/u7791335/composer.phar'
 # Branch options
 # Prompts for the branch name (defaults to current branch)
 #ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }

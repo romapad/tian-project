@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "77ad64c9c82dbb30de908ffc5dba0087",
-    "content-hash": "f03e2f27a3d4102656fb7dd4546ae5e9",
+    "hash": "9ba4cf6604a4eaa60f060ca2ce120e4c",
+    "content-hash": "7c6d69f319439d38f1a3d8cfc6d40b96",
     "packages": [
         {
             "name": "composer/installers",
@@ -107,16 +107,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "85d6a8c16c7e8bb369e7530d3676d16618f68e24"
+                "reference": "fe9320de0793602084c600e22c0c5e0bb601a264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/85d6a8c16c7e8bb369e7530d3676d16618f68e24",
-                "reference": "85d6a8c16c7e8bb369e7530d3676d16618f68e24",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fe9320de0793602084c600e22c0c5e0bb601a264",
+                "reference": "fe9320de0793602084c600e22c0c5e0bb601a264",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-01-06 18:46:15"
+            "time": "2016-02-02 17:16:14"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -309,31 +309,6 @@
             "time": "2015-05-02 21:48:19"
         },
         {
-            "name": "wp-sync-db/wp-sync-db-cli",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-sync-db/wp-sync-db-cli.git",
-                "reference": "28188ea6c4081e5bd322e9c14bbfc4946d5dcb73"
-            },
-            "require": {
-                "composer/installers": "~1.0.6"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPLv2"
-            ],
-            "description": "WP Sync DB CLI Addon",
-            "homepage": "https://github.com/wp-sync-db/wp-sync-db-cli",
-            "keywords": [
-                "cli",
-                "plugin",
-                "wordpress",
-                "wp-sync-db"
-            ],
-            "time": "2014-09-02 16:15:16"
-        },
-        {
             "name": "wp-sync-db/wp-sync-db-media-files",
             "version": "dev-master",
             "source": {
@@ -399,6 +374,26 @@
             "homepage": "https://wordpress.org/plugins/backwpup/"
         },
         {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.3.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
             "name": "wpackagist-plugin/cyr3lat",
             "version": "3.5",
             "source": {
@@ -439,26 +434,6 @@
             "homepage": "https://wordpress.org/plugins/image-widget/"
         },
         {
-            "name": "wpackagist-plugin/woocommerce",
-            "version": "2.5.0",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/2.5.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.5.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woocommerce/"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-seo",
             "version": "3.0.7",
             "source": {
@@ -485,8 +460,7 @@
     "stability-flags": {
         "roots/soil": 20,
         "wp-sync-db/wp-sync-db": 20,
-        "wp-sync-db/wp-sync-db-media-files": 20,
-        "wp-sync-db/wp-sync-db-cli": 20
+        "wp-sync-db/wp-sync-db-media-files": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

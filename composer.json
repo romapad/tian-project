@@ -38,8 +38,19 @@
     {
       "type": "git",
       "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git"
-    }		
-	
+    },
+	{
+      "type": "package",
+      "package": {
+          "name": "romapad/tian",
+          "type": "wordpress-theme",
+          "version": "dev-master",
+          "source": {
+              "type": "vcs",
+              "url": "https://github.com/romapad/tian-project/tree/master/tian"
+          }
+        }
+	}
   ],
   "require": {
     "php": ">=5.4",
@@ -54,7 +65,8 @@
     "wpackagist-plugin/wordpress-seo": "3.0.7",
 	"wpackagist-plugin/contact-form-7": "4.3.1",
 	"wp-sync-db/wp-sync-db": "dev-master",
-	"wp-sync-db/wp-sync-db-media-files": "dev-master"
+	"wp-sync-db/wp-sync-db-media-files": "dev-master",
+	"romapad/tian": "dev-master"
   },
   "extra": {
     "installer-paths": {

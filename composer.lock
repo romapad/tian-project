@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ba4cf6604a4eaa60f060ca2ce120e4c",
-    "content-hash": "7c6d69f319439d38f1a3d8cfc6d40b96",
+    "hash": "38b81639a24c3a945c6b76bd726ecad5",
+    "content-hash": "e68195604e062da6782fcb500d61f581",
     "packages": [
         {
             "name": "composer/installers",
@@ -375,15 +375,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.3.1",
+            "version": "4.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.3.1"
+                "reference": "tags/4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -414,6 +414,26 @@
             "homepage": "https://wordpress.org/plugins/cyr3lat/"
         },
         {
+            "name": "wpackagist-plugin/duplicate-post",
+            "version": "2.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/duplicate-post/",
+                "reference": "tags/2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
             "name": "wpackagist-plugin/image-widget",
             "version": "4.2.1",
             "source": {
@@ -432,6 +452,46 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/image-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/mce-table-buttons",
+            "version": "3.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/mce-table-buttons/",
+                "reference": "tags/3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mce-table-buttons.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mce-table-buttons/"
+        },
+        {
+            "name": "wpackagist-plugin/types",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/types/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/types/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

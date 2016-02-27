@@ -47,7 +47,8 @@
           "version": "dev-master",
           "source": {
               "type": "vcs",
-              "url": "https://github.com/romapad/tian-project/tree/master/tian"
+              "url": "https://github.com/romapad/tian-project/tree/master/tian",
+			  "reference": ""
           }
         }
 	}
@@ -63,11 +64,14 @@
 	"wpackagist-plugin/akismet": "3.1.7",
     "wpackagist-plugin/backwpup": "3.2.3",
     "wpackagist-plugin/wordpress-seo": "3.0.7",
-	"wpackagist-plugin/contact-form-7": "4.3.1",
+	"wpackagist-plugin/contact-form-7": "4.4",
+	"wpackagist-plugin/duplicate-post": "2.6",
+	"wpackagist-plugin/types": "1.9",
+	"wpackagist-plugin/mce-table-buttons": "3.2",
 	"wp-sync-db/wp-sync-db": "dev-master",
 	"wp-sync-db/wp-sync-db-media-files": "dev-master",
-	"romapad/tian": "dev-master"
-  },
+    "romapad/tian": "dev-master"
+    },
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],

@@ -44,11 +44,11 @@
       "package": {
           "name": "romapad/tian",
           "type": "wordpress-theme",
-          "version": "dev-master",
+          "version": "1.0.0",
           "source": {
-              "type": "vcs",
-              "url": "https://github.com/romapad/tian-project/tree/master/tian",
-			  "reference": ""
+              "type": "zip",
+              "url": "tian.zip",
+			  "reference": "master"
           }
         }
 	}

@@ -70,7 +70,7 @@
 	"wpackagist-plugin/mce-table-buttons": "3.2",
 	"wp-sync-db/wp-sync-db": "dev-master",
 	"wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "romapad/tian": "dev-master"
+    "romapad/tian": "*"
     },
   "extra": {
     "installer-paths": {

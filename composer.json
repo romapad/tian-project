@@ -68,6 +68,7 @@
 	"wpackagist-plugin/duplicate-post": "2.6",
 	"wpackagist-plugin/types": "1.9",
 	"wpackagist-plugin/mce-table-buttons": "3.2",
+	"wpackagist-plugin/contact-form-7-dynamic-text-extension": "2.0.1",
 	"wp-sync-db/wp-sync-db": "dev-master",
 	"wp-sync-db/wp-sync-db-media-files": "dev-master",
     "romapad/tian": "*"

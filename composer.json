@@ -24,7 +24,8 @@
     "forum": "https://discourse.roots.io/category/bedrock"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+	"secure-http": "false"
   },
   "repositories": [
     { 
@@ -44,11 +45,10 @@
       "package": {
           "name": "romapad/tian",
           "type": "wordpress-theme",
-          "version": "dev-master",
-          "source": {
-              "type": "vcs",
-              "url": "https://github.com/romapad/tian-project/tree/master/tian",
-			  "reference": ""
+          "version": "1.0",
+          "dist": {
+              "type": "zip",
+              "url": "http://tian.wpso.ru/app/themes/tian.zip"
           }
         }
 	}

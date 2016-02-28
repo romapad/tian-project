@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38b81639a24c3a945c6b76bd726ecad5",
-    "content-hash": "e68195604e062da6782fcb500d61f581",
+    "hash": "97db788e7470325d1a5745271a70b930",
+    "content-hash": "2b2c32314eeb0be88c7e04555c773e5e",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,6 +189,17 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "romapad/tian",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "http://tian.wpso.ru/app/themes/tian.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-theme"
         },
         {
             "name": "roots/soil",

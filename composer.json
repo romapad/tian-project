@@ -48,7 +48,7 @@
           "version": "1.0",
           "dist": {
               "type": "zip",
-              "url": "http://tian.wpso.ru/app/themes/tian.zip"
+              "url": "http://wpso.ru/tian.zip"
           }
         }
 	}
@@ -59,16 +59,15 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.2",
     "roots/soil": "dev-master",
-	"wpackagist-plugin/image-widget": "4.2.1",
-	"wpackagist-plugin/cyr3lat": "3.5",
-	"wpackagist-plugin/akismet": "3.1.7",
-    "wpackagist-plugin/backwpup": "3.2.3",
-    "wpackagist-plugin/wordpress-seo": "3.0.7",
-	"wpackagist-plugin/contact-form-7": "4.4",
-	"wpackagist-plugin/duplicate-post": "2.6",
-	"wpackagist-plugin/types": "1.9",
-	"wpackagist-plugin/mce-table-buttons": "3.2",
-	"wpackagist-plugin/contact-form-7-dynamic-text-extension": "2.0.1",
+	"wpackagist-plugin/image-widget": "dev-trunk",
+	"wpackagist-plugin/cyr3lat": "dev-trunk",
+    "wpackagist-plugin/backwpup": "dev-trunk",
+    "wpackagist-plugin/wordpress-seo": "dev-trunk",
+	"wpackagist-plugin/contact-form-7": "dev-trunk",
+	"wpackagist-plugin/types": "dev-trunk",
+	"wpackagist-plugin/mce-table-buttons": "dev-trunk",
+	"wpackagist-plugin/custom-post-widget": "dev-trunk",
+	"wpackagist-plugin/contact-form-7-dynamic-text-extension": "dev-trunk",
 	"wp-sync-db/wp-sync-db": "dev-master",
 	"wp-sync-db/wp-sync-db-media-files": "dev-master",
     "romapad/tian": "*"

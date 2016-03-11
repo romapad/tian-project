@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89"
+                "reference": "80e7da461ddbbf52f5fcf03449592e2f25eb63a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
+                "url": "https://api.github.com/repos/roots/soil/zipball/80e7da461ddbbf52f5fcf03449592e2f25eb63a2",
+                "reference": "80e7da461ddbbf52f5fcf03449592e2f25eb63a2",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-01-21 02:48:35"
+            "time": "2016-03-11 02:29:48"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -289,14 +289,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db.git",
-                "reference": "1e3751b7fb142c40f05773f2a0deb047e4ca37d0"
+                "reference": "b7dfaf61d23ee6ce72500049c1e55c5377771d46"
             },
             "require": {
                 "composer/installers": "~1.0.6"
             },
             "type": "wordpress-plugin",
+            "scripts": {
+                "test": [
+                    "./test.sh"
+                ]
+            },
             "license": [
-                "GPLv2"
+                "GPL-2.0"
             ],
             "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
             "homepage": "https://github.com/wp-sync-db/wp-sync-db",
@@ -306,7 +311,7 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2016-03-01 06:29:28"
+            "time": "2016-03-07 07:30:30"
         },
         {
             "name": "wp-sync-db/wp-sync-db-media-files",
@@ -314,14 +319,14 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git",
-                "reference": "be6dc51678ee7e44c158d9bd38169aba4ac8964c"
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1"
             },
             "require": {
                 "composer/installers": "~1.0.6"
             },
             "type": "wordpress-plugin",
             "license": [
-                "GPLv2"
+                "GPL-2.0"
             ],
             "description": "WP Sync DB Media File Addon for WP Sync DB",
             "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
@@ -331,7 +336,7 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2015-01-17 02:23:40"
+            "time": "2016-03-07 16:34:12"
         },
         {
             "name": "wpackagist-plugin/backwpup",

@@ -39,19 +39,7 @@
     {
       "type": "git",
       "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git"
-    },
-	{
-      "type": "package",
-      "package": {
-          "name": "romapad/tian",
-          "type": "wordpress-theme",
-          "version": "1.0",
-          "dist": {
-              "type": "zip",
-              "url": "http://wpso.ru/tian.zip"
-          }
-        }
-	}
+    }
   ],
   "require": {
     "php": ">=5.4",
@@ -68,9 +56,12 @@
 	"wpackagist-plugin/mce-table-buttons": "dev-trunk",
 	"wpackagist-plugin/custom-post-widget": "dev-trunk",
 	"wpackagist-plugin/contact-form-7-dynamic-text-extension": "dev-trunk",
+	"wpackagist-plugin/adminimize": "dev-trunk",
+	"wpackagist-plugin/better-wp-security": "dev-trunk",
+	"wpackagist-plugin/iwp-client": "dev-trunk",
+    "wpackagist-plugin/dl-yandex-metrika": "dev-trunk",
 	"wp-sync-db/wp-sync-db": "dev-master",
-	"wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "romapad/tian": "*"
+	"wp-sync-db/wp-sync-db-media-files": "dev-master"
     },
   "extra": {
     "installer-paths": {

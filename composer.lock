@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b05baf5d22c05b520e56bff63d92a24",
-    "content-hash": "62dea9fc5f96a310355bdca52a4a84c5",
+    "hash": "4746a271874a280f08e7964c68796507",
+    "content-hash": "d06a6b77cd272996c001047e2cf6fc8f",
     "packages": [
         {
             "name": "composer/installers",
@@ -196,17 +196,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89"
+                "reference": "46a02c8fe837928b505bf9e95b61aa0c72885172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
-                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
+                "url": "https://api.github.com/repos/roots/soil/zipball/46a02c8fe837928b505bf9e95b61aa0c72885172",
+                "reference": "46a02c8fe837928b505bf9e95b61aa0c72885172",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.5.1"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -230,7 +233,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-01-21 02:48:35"
+            "time": "2016-03-12 19:19:19"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -289,14 +292,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db.git",
-                "reference": "1e3751b7fb142c40f05773f2a0deb047e4ca37d0"
+                "reference": "b7dfaf61d23ee6ce72500049c1e55c5377771d46"
             },
             "require": {
                 "composer/installers": "~1.0.6"
             },
             "type": "wordpress-plugin",
+            "scripts": {
+                "test": [
+                    "./test.sh"
+                ]
+            },
             "license": [
-                "GPLv2"
+                "GPL-2.0"
             ],
             "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
             "homepage": "https://github.com/wp-sync-db/wp-sync-db",
@@ -306,7 +314,7 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2016-03-01 06:29:28"
+            "time": "2016-03-07 07:30:30"
         },
         {
             "name": "wp-sync-db/wp-sync-db-media-files",
@@ -314,14 +322,14 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git",
-                "reference": "be6dc51678ee7e44c158d9bd38169aba4ac8964c"
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1"
             },
             "require": {
                 "composer/installers": "~1.0.6"
             },
             "type": "wordpress-plugin",
             "license": [
-                "GPLv2"
+                "GPL-2.0"
             ],
             "description": "WP Sync DB Media File Addon for WP Sync DB",
             "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
@@ -331,14 +339,35 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2015-01-17 02:23:40"
+            "time": "2016-03-07 16:34:12"
+        },
+        {
+            "name": "wpackagist-plugin/adminimize",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/adminimize/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/adminimize.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/adminimize/",
+            "time": "2016-03-13 20:01:11"
         },
         {
             "name": "wpackagist-plugin/backwpup",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/backwpup/",
+                "url": "https://plugins.svn.wordpress.org/backwpup/",
                 "reference": "trunk"
             },
             "dist": {
@@ -352,14 +381,35 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/backwpup/",
-            "time": "2016-02-26 21:51:58"
+            "time": "2016-03-22 11:49:15"
+        },
+        {
+            "name": "wpackagist-plugin/better-wp-security",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/better-wp-security/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/better-wp-security/",
+            "time": "2016-03-17 20:26:19"
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/contact-form-7/",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
                 "reference": "trunk"
             },
             "dist": {
@@ -380,7 +430,7 @@
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/contact-form-7-dynamic-text-extension/",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7-dynamic-text-extension/",
                 "reference": "trunk"
             },
             "dist": {
@@ -401,7 +451,7 @@
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/custom-post-widget/",
+                "url": "https://plugins.svn.wordpress.org/custom-post-widget/",
                 "reference": "trunk"
             },
             "dist": {
@@ -422,7 +472,7 @@
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/cyr3lat/",
+                "url": "https://plugins.svn.wordpress.org/cyr3lat/",
                 "reference": "trunk"
             },
             "dist": {
@@ -439,11 +489,32 @@
             "time": "2015-03-20 23:51:19"
         },
         {
+            "name": "wpackagist-plugin/dl-yandex-metrika",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/dl-yandex-metrika/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/dl-yandex-metrika.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/dl-yandex-metrika/",
+            "time": "2015-10-18 11:28:43"
+        },
+        {
             "name": "wpackagist-plugin/image-widget",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/image-widget/",
+                "url": "https://plugins.svn.wordpress.org/image-widget/",
                 "reference": "trunk"
             },
             "dist": {
@@ -460,11 +531,32 @@
             "time": "2016-02-29 19:20:16"
         },
         {
+            "name": "wpackagist-plugin/iwp-client",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/iwp-client/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/iwp-client.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/iwp-client/",
+            "time": "2016-03-18 12:57:00"
+        },
+        {
             "name": "wpackagist-plugin/mce-table-buttons",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/mce-table-buttons/",
+                "url": "https://plugins.svn.wordpress.org/mce-table-buttons/",
                 "reference": "trunk"
             },
             "dist": {
@@ -485,7 +577,7 @@
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/types/",
+                "url": "https://plugins.svn.wordpress.org/types/",
                 "reference": "trunk"
             },
             "dist": {
@@ -499,14 +591,14 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/types/",
-            "time": "2016-02-18 15:42:26"
+            "time": "2016-03-08 16:14:12"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
                 "reference": "trunk"
             },
             "dist": {
@@ -520,7 +612,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2016-03-01 10:55:35"
+            "time": "2016-03-08 14:32:44"
         }
     ],
     "packages-dev": [],
@@ -537,6 +629,10 @@
         "wpackagist-plugin/mce-table-buttons": 20,
         "wpackagist-plugin/custom-post-widget": 20,
         "wpackagist-plugin/contact-form-7-dynamic-text-extension": 20,
+        "wpackagist-plugin/adminimize": 20,
+        "wpackagist-plugin/better-wp-security": 20,
+        "wpackagist-plugin/iwp-client": 20,
+        "wpackagist-plugin/dl-yandex-metrika": 20,
         "wp-sync-db/wp-sync-db": 20,
         "wp-sync-db/wp-sync-db-media-files": 20
     },
